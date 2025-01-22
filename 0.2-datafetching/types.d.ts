@@ -1,3 +1,12 @@
+type Post = {
+  "userId": number,
+  "id": number,
+  "title": string,
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum"
+}
+
+
+
 type User = {
     "id": number,
     "name": string,

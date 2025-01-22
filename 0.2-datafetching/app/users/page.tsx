@@ -12,6 +12,8 @@ const Userspage = async () => {
   const userData: Promise<User[]> = getUsers();
   const users = await userData;
 
+
+  console.log(`Hello developer`);
   console.log(`Hello ${users}`);
 
   const content = (

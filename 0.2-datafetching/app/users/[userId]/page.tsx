@@ -1,4 +1,8 @@
+import getEachUser from '@/lib/getEachUser';
+import getEachUserPost from '@/lib/getUserPosts';
 import React from 'react'
+
+
 
 type Params = {
     params: {
@@ -6,7 +10,12 @@ type Params = {
     }
 }
 
-export default function Userpage({params: {userId}} : Params) {
+export default async function Userpage({params: {userId}} : Params) {
+  const userData: Promise<User> = getEachUser(userId);
+  const userPost: Promise<Post[]> = getEachUser(userId);
+
+  const [user, userPosts] = await Promise.all([userData, userPost])
+
   return (
     <div>User</div>
   )
