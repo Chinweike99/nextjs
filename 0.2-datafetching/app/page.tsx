@@ -15,6 +15,11 @@ export default function Home() {
       <Link href={'/users'}>
         go to users
       </Link>
+      <div>
+      {/* <marquee direction="top">
+        <h2>Hello Welcome</h2>
+        </marquee> */}
+      </div>
     </main>
   );
 }
